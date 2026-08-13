@@ -1,0 +1,22 @@
+string = "vignesh"
+
+# string is by default sequence of characters, 
+# so we can access the characters using indexing and even negative also working
+string[0]
+print(string[-1])
+
+#slicing is also possible in string, 
+# we can slice the string using [start:stop:step]
+
+print(string[0:5]) # it will print from index 0 to 4 [5] is excluded
+
+
+print(string[0:5:2]) # it will print from index 0 to 4 with step 2
+
+
+print(string[::-1]) # it will print the string in reverse order
+print(string[:2]) # it will print first 2
+print(string[2:]) # it will print from index 2 to end
+print(string[:])
+
+
