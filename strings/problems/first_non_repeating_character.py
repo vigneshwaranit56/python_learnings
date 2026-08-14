@@ -7,6 +7,7 @@ for char in name:
         dict[char] += 1
     else:
         dict[char] = 1
+    print(dict)
 
 for i in dict:
     if dict[i] == 1:
