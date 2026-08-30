@@ -16,14 +16,16 @@ def add_expenses():
     description = input("\n enter the description : ")
     amount = int(input("\n enter the amount : "))
     id = next_id
-    expenses.append({
+
+    expense =  {
         "id": id,
         "category": category,
         "description": description,
         "amount": amount
-    })
+    }
+    expenses.append(expense)
     next_id += 1
-    print(expenses[id-1])
+    print(expense)
 
 def delete_expenses():
     expense_id = int(input("Enter the expense ID to delete: "))
