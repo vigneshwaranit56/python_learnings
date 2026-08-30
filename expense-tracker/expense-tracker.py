@@ -1,4 +1,6 @@
 expenses = []
+next_id = 1
+
 def display_menu():
     print("\n===== Expense Tracker =====")
     print("1. Add Expense")
@@ -9,17 +11,18 @@ def display_menu():
     print("6. Exit")
 
 def add_expenses():
+    global next_id
     category = input("\n enter the category : ")
     description = input("\n enter the description : ")
     amount = int(input("\n enter the amount : "))
-    id = len(expenses)+1
+    id = next_id
     expenses.append({
         "id": id,
         "category": category,
         "description": description,
         "amount": amount
     })
-
+    next_id += 1
     print(expenses[id-1])
 
 def delete_expenses():
